@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <div class="container destaque">
+      <p>Bem vindo ao curso de boostrap - Fundamentos</p>
+    </div>
+    <div class="fluid-container destaque">
+      <p>Bem vindo ao curso de boostrap - Fundamentos</p>
+    </div> -->
+    <!-- Breakpoints do boostrap
+    - xs(extra-small devices) ----------------------- < 576px 
+    - sm(small devices) ----------------------------- 576px <= viewport <= 767px
+    - md(medium devices) ---------------------------- 768px <= viewport <= 991px
+    - lg(large devices) ----------------------------- 992px <= viewport <= 1999px
+    - xg(extra-large devices) ----------------------- viewport >= 1200px
+    -->
+
+    <div class="container">
+      <h2>Grid System</h2>
+      <div class="row destaque">
+        <div class="col destaque">Parte 1</div>
+        <div class="col destaque">Parte 2</div>
+        <div class="col destaque">Parte 3</div>
+        <div class="col destaque">Parte 4</div>
+      </div>
+      <div class="row destaque">
+        <div class="col destaque">Parte 1</div>
+        <div class="col destaque">Parte 2</div>
+        <div class="col destaque">Parte 3</div>
+      </div>
+      <div class="row destaque">
+        <div class="col destaque">Parte 1</div>
+        <div class="col-6 destaque">Parte 2</div>
+        <div class="col destaque">Parte 3</div>
+      </div>
+      <div class="row destaque">
+        <div class="col-sm-12 col-md-3 destaque">Parte 1</div>
+        <div class="col-sm-12 col-md-6 destaque">Parte 2</div>
+        <div class="col-sm-12 col-md-3 destaque">Parte 3</div>
+      </div>
+      <div class="row destaque">
+        <div class="col-12 col-sm-4 col-md-3 destaque">Parte 1</div>
+        <div class="col-12 col-sm-4 col-md-6 destaque">Parte 2</div>
+        <div class="col-12 col-sm-4 col-md-3 destaque">Parte 3</div>
+      </div>
+      <div class="row destaque">
+        <div class="col-12 col-sm-4 col-md-3 destaque">Parte 1</div>
+        <div class="col-auto destaque">Parte 2</div>
+        <div class="col-auto destaque">Parte 3</div>
+      </div>
+      <h2>Posicionamento Vertical(align-items)</h2>
+      <div class="row destaque linha-maior align-items-start">
+        <div class="col destaque coluna-normal">Parte 1</div>
+        <div class="col destaque coluna-normal">Parte 2</div>
+        <div class="col destaque coluna-normal">Parte 3</div>
+      </div>
+      <div class="row destaque linha-maior align-items-center">
+        <div class="col destaque coluna-normal">Parte 1</div>
+        <div class="col destaque coluna-normal">Parte 2</div>
+        <div class="col destaque coluna-normal">Parte 3</div>
+      </div>
+      <div class="row destaque linha-maior align-items-end">
+        <div class="col destaque coluna-normal">Parte 1</div>
+        <div class="col destaque coluna-normal">Parte 2</div>
+        <div class="col destaque coluna-normal">Parte 3</div>
+      </div>
+      <div class="row destaque linha-maior">
+        <div class="col destaque coluna-normal align-self-start">Parte 1</div>
+        <div class="col destaque coluna-normal align-self-center">Parte 2</div>
+        <div class="col destaque coluna-normal align-self-end">Parte 3</div>
+      </div>
+      <h2>Posicionamento Horizontal(justify-content)</h2>
+      <div class="row linha-clara destaque justify-content-start">
+        <div class="col-3 destaque">Parte 1</div>
+        <div class="col-3 destaque">Parte 2</div>
+      </div>
+      <div class="row linha-clara destaque justify-content-center">
+        <div class="col-3 destaque">Parte 1</div>
+        <div class="col-3 destaque">Parte 2</div>
+      </div>
+      <div class="row linha-clara destaque justify-content-end">
+        <div class="col-3 destaque">Parte 1</div>
+        <div class="col-3 destaque">Parte 2</div>
+      </div>
+      <div class="row linha-clara destaque justify-content-around">
+        <div class="col-3 destaque">Parte 1</div>
+        <div class="col-3 destaque">Parte 2</div>
+        <div class="col-3 destaque">Parte 3</div>
+      </div>
+      <div class="row linha-clara destaque justify-content-between">
+        <div class="col-3 destaque">Parte 1</div>
+        <div class="col-3 destaque">Parte 2</div>
+        <div class="col-3 destaque">Parte 3</div>
+      </div>
+      <h2>Ordenação(Order)</h2>
+      <div class="row destaque">
+        <div class="col destaque order-last">1º</div>
+        <div class="col destaque">2º</div>
+        <div class="col destaque order-first">3º</div>
+      </div>
+      <h2>Offset(Pular colunas)</h2>
+      <div class="row destaque">
+        <div class="col-3 destaque">1º</div>
+        <div class="col-3 offset-2 destaque">2º</div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+l
